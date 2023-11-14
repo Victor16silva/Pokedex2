@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <title>Pokedex </title>
+
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="preload" href="./assets/css/styles.min.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" >
+</head>
+
+<body>
+    <header class="header-bg fadeIn" aria-label="Cabeçalho">
+        <div class="header container">
+            <a href="index.html" class="logo-pokedex">
+                <img src="assets\imgs\header\Pokédex_logo.png" width="" height="50" alt="Logo Pokedex">
+            </a>
+
+            <label for="search">
+                <input type="text" placeholder="Pesquise o Pokémon" id="search" name="search">
+            </label>
+
+            <nav aria-label="Primária">
+                <ul class="header-menu">
+                    <li><a href="index.html">Início
+                        </a>
+                    </li>
+                    <li><a href="details.html">
+                            Pokemon
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">        
+        <h1 class="titulo">Lista de Pokemon</h1>
+        <ol id="pokemonList" class="pokemon">
+        </ol>
+
+        <div class="pagination fadeIn">
+            <button id="loadMoreButton" type="button">
+                Carregar mais
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer container fadeIn" aria-label="Rodapé">
+        <h3>Criado por Victor .C. da Silva </h3>
+    </footer>
+
+    <!-- <script src="assets/js/loadPokemon.js"></script> -->
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
